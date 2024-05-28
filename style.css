@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(17, 2, 36);
+}
+body h1:hover{
+    transform: translateY(-30px);
+}
+
+nav .navbar {
+    background-color:  rgba(182, 147, 203, 0.785);
+}
+
+.section {
+    display: flex;
+    padding: 30px;
+    background-color: rgb(199, 161, 224);
+    color: #f9f9f9;
+}
+
+.section p{
+    font-size: larger;
+}
+
+.section span{
+    color: rgba(0, 0, 255, 0.961);
+}
+
+
+#portfolio{
+    width: 100%;
+    max-width: fit-content;
+}
+
+#portfolio h1{
+    color: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2cm;
+}
+
+#about{
+    background-color: rgba(182, 147, 203, 0.785);
+    width: 100%;
+    max-width: fit-content;
+}
+
+#about h1{
+    color: black; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 2cm;
+}
+
+#about p{
+    color: black;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#about a{
+    color: white ;
+    font-weight: 300; 
+    text-decoration: underline;
+}
+
+.container h2,
+p,ol {
+    color: white;
+}
+.card img{
+    height: 300px;
+}
+
+.card-text{
+    color: black;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out; /* Add card hover animation */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Adjust hover animation */
+}
+
+#contact label{
+    color: white;
+}
