@@ -1,9 +1,6 @@
 body {
     background-color: rgb(17, 2, 36);
 }
-body h1:hover{
-    transform: translateY(-30px);
-}
 
 nav .navbar {
     background-color:  rgba(182, 147, 203, 0.785);
@@ -78,6 +75,12 @@ p,ol {
 
 .card:hover {
     transform: translateY(-10px); /* Adjust hover animation */
+}
+
+#contact h1{
+    color: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2cm;
 }
 
 #contact label{
