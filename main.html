@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,14 +50,15 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .left, .right {
+        .left,
+        .right {
             flex: 1;
             padding: 20px;
         }
 
         .left h1 {
             margin-bottom: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 3.5rem;
             color: white;
         }
@@ -96,19 +98,20 @@
 
         #portfolio h1 {
             margin-bottom: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 4.5rem;
             color: #bb86fc;
         }
 
         #portfolio span {
             margin-bottom: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-            font-size: 4.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size: 4.5rem; */
             color: white;
         }
 
         .card {
+
             border: none;
             border-radius: 10px;
             background: #1f1f1f;
@@ -147,8 +150,8 @@
         #about h1 {
             margin-bottom: 30px;
             padding-left: 80px;
-            color: rgb(17, 2, 36); 
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            color: rgb(17, 2, 36);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 4rem;
         }
 
@@ -156,16 +159,12 @@
             font-size: 1.1rem;
             color: #000000;
             text-align: left;
-            padding-left: 10px; 
-           /* font-size: 1.2rem;
-            margin-bottom: 20px;
             padding-left: 10px;
-            color: white; */
         }
 
         #about a {
             color: white;
-            font-weight: bolder; 
+            font-weight: bolder;
             text-decoration: underline;
         }
 
@@ -176,8 +175,8 @@
 
         #contact h1 {
             margin-bottom: 30px;
-            color: white; 
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 4.5rem;
             text-align: left;
         }
@@ -256,7 +255,7 @@
         footer {
             padding: 20px 0;
             text-align: center;
-            background: #333;
+            background: #1f1f1f;
             color: #dcdcdc;
         }
 
@@ -275,24 +274,35 @@
         .scroll-up:hover {
             color: #9a67ea;
         }
+        
 
         @media (max-width: 768px) {
-            .section {
-                flex-direction: column;
+            .section .left {
+                width: 80vw;
+                /* flex-direction: column; */
             }
 
-            .left, .right {
+            .section .right {
+                display: none;
+            }
+
+            .left,
+            .right {
                 flex: unset;
                 width: 100%;
                 padding: 20px 0;
             }
 
-            .left h1, #portfolio h1, #about h1, #contact h1 {
+            .left h1,
+            #portfolio h1,
+            #about h1,
+            #contact h1 {
                 font-size: 2.5rem;
                 text-align: center;
             }
 
-            .left p, #about p {
+            .left p,
+            #about p {
                 text-align: center;
                 font-size: 1rem;
             }
@@ -338,11 +348,12 @@
     </nav>
 
     <div class="container" data-aos="fade-up">
+
         <div class="section">
             <div class="left">
                 <h1>Hello, I'm <span>SUJAL</span></h1>
                 <p>A passionate web developer creating interactive and responsive web applications.</p>
-                <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
             </div>
             <div class="right" data-aos="fade-right">
                 <img src="WhatsApp Image 2024-05-30 at 12.55.37 PM.jpeg" alt="Profile Picture">
@@ -352,76 +363,206 @@
 
     <div id="portfolio" class="container" data-aos="fade-up">
         <h1>Portf<span>olio</span></h1>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="302968254-02e2b6d2-f58e-48d8-bed8-057267faaadb.png" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Money Tracking WebApp</h5>
-                        <p class="card-text">This money tracking web app, built with HTML, CSS, and JavaScript, provides users with a straightforward and interactive platform for managing their finances. Developers can further improve the app by incorporating additional features and refining the user interface based on user feedback and evolving needs.</p>
+    
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mb-4">
+                            <div class="block d-flex">
+                                <div class="leftt w-50 p-2">
+                                    <div class="card">
+                                        <img src="302968254-02e2b6d2-f58e-48d8-bed8-057267faaadb.png"
+                                             class="card-img-top" alt="Project 1">
+                                        <div class="card-body">
+                                            
+                                            <p class="card-text">This money tracking web app, built with HTML, CSS, and
+                                                JavaScript, provides users with a straightforward and interactive platform for
+                                                managing their finances.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                        <h1>Money Tracking WebApp</h1>
+                                    </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="302968116-c4ecb2a6-4ef9-452a-a255-88823af1ed2e.png" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Random Password Generator</h5>
-                        <p class="card-text">It is a simple application built using the Tkinter library in Python. Its main purpose is to generate random passwords based on user-defined criteria such as length. The generated password includes a mix of letters (both upper and lower case), digits, and punctuation characters, providing a secure and diverse.</p>
+                <!-- Repeat for each carousel item -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mb-4">
+                            <div class="block d-flex">
+                                <div class="leftt w-50 p-2">
+                                    <div class="card">
+                                        <img src="302968116-c4ecb2a6-4ef9-452a-a255-88823af1ed2e.png"
+                                             class="card-img-top" alt="Project 2">
+                                        <div class="card-body">
+                                            
+                                            <p class="card-text">Its main purpose is to generate random passwords based on user-defined
+                                                criteria such as length.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                        <h1>Random Password Generator</h1>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="302964062-c86603d5-b610-4fb4-9506-1aeb99b1dda9.png" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Inventory Management System (IVM)</h5>
-                        <p class="card-text">The project aims to provide a user-friendly and secure solution for efficient inventory management. It includes setting up a MySQL database, establishing a Python-MySQL connection, implementing CRUD operations for data manipulation.</p>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mb-4">
+                            <div class="block d-flex">
+                                <div class="leftt w-50 p-2">
+                                    <div class="card">
+                                        <img src="302964062-c86603d5-b610-4fb4-9506-1aeb99b1dda9.png"
+                                             class="card-img-top" alt="Project 3">
+                                        <div class="card-body">
+                                           
+                                            <p class="card-text">The project aims to provide a user-friendly and secure solution
+                                                for efficient inventory management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                        <h1>Inventory Management System</h1>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Add more carousel items as needed -->
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
+    
 
     <div id="about" class="container" data-aos="fade-right">
         <h1>About Me</h1>
-        <p> I'm eager to carve out a career path where I can leverage my academic
-            knowledge and refine my practical abilities. My goal is to create a positive impact, excel in dynamic
-            settings, and actively pursue ongoing learning to fuel my professional development. My skills include HTML,
-            CSS, and Python, and I'm constantly honing my abilities in data science and data analysis. Currently diving
-            deep into the world of data, I'm excited about exploring insights and patterns that drive decision-making.
-            Looking forward to delving deeper into AI and its applications in shaping the future. Let's connect and
-            collaborate on innovative projects!</p>
-        <p>My professional journey includes completing two impactful internships that have honed my technical skills and
-            enhanced my ability to deliver robust software solutions</p>
+        <p> I'm eager to carve out a career
+            path where I can leverage my
+            academic
+            knowledge and refine my
+            practical abilities. My goal is
+            to create a positive impact,
+            excel in
+            dynamic
+            settings, and actively pursue
+            ongoing learning to fuel my
+            professional development. My
+            skills
+            include HTML,
+            CSS, and Python, and I'm
+            constantly honing my abilities
+            in data science and data
+            analysis.
+            Currently diving
+            deep into the world of data, I'm
+            excited about exploring insights
+            and patterns that drive
+            decision-making.
+            Looking forward to delving
+            deeper into AI and its
+            applications in shaping the
+            future. Let's
+            connect and
+            collaborate on innovative
+            projects!</p>
+        <p>My professional journey includes
+            completing two impactful
+            internships that have honed my
+            technical skills and
+            enhanced my ability to deliver
+            robust software solutions</p>
 
         <ol>
-            <li>Internship at <a href="https://bharatintern.live/">Bharat Intern</a> as a Full-Stack Developer</li>
+            <li>Internship at <a href="https://bharatintern.live/">Bharat
+                    Intern</a> as a
+                Full-Stack
+                Developer</li>
             <ul>
-                <li>Successfully completed three comprehensive projects, demonstrating proficiency in both front-end and
-                    back-end development.</li>
-                <li>Collaborated with cross-functional teams to design, develop, and deploy dynamic web applications.
+                <li>Successfully completed
+                    three comprehensive
+                    projects, demonstrating
+                    proficiency in both
+                    front-end and
+                    back-end development.
                 </li>
-                <li>Gained expertise in various technologies, including HTML, CSS, JavaScript, React, Node.js, and
+                <li>Collaborated with
+                    cross-functional teams
+                    to design, develop, and
+                    deploy dynamic web
+                    applications.
+                </li>
+                <li>Gained expertise in
+                    various technologies,
+                    including HTML, CSS,
+                    JavaScript, React,
+                    Node.js, and
                     MongoDB.</li>
-                <li>Ensured seamless integration of user interfaces with server-side logic, resulting in improved user
+                <li>Ensured seamless
+                    integration of user
+                    interfaces with
+                    server-side logic,
+                    resulting in
+                    improved user
                     experiences.</li>
             </ul>
-            <li>Internship at <a href="https://oasisinfobyte.com/">Oasis Infobyte</a> as a Python Programmer</li>
+            <li>Internship at <a href="https://oasisinfobyte.com/">Oasis
+                    Infobyte</a> as a Python
+                Programmer
+            </li>
             <ul>
-                <li>Focused on enhancing graphical user interfaces (GUIs) to create intuitive and user-friendly
+                <li>Focused on enhancing
+                    graphical user
+                    interfaces (GUIs) to
+                    create intuitive and
+                    user-friendly
                     applications.</li>
-                <li>Leveraged Python libraries such as Tkinter and PyQt to develop and refine application interfaces.
+                <li>Leveraged Python
+                    libraries such as
+                    Tkinter and PyQt to
+                    develop and refine
+                    application
+                    interfaces.
                 </li>
-                <li>Worked on various projects that required problem-solving skills and a deep understanding of Python
+                <li>Worked on various
+                    projects that required
+                    problem-solving skills
+                    and a deep understanding
+                    of Python
                     programming.</li>
-                <li>Contributed to code optimization and debugging, leading to increased application efficiency.</li>
+                <li>Contributed to code
+                    optimization and
+                    debugging, leading to
+                    increased application
+                    efficiency.</li>
             </ul>
         </ol>
 
-        <p>My internships have equipped me with a solid foundation in software development, and I am eager to bring my
-            skills to new and challenging projects. I am passionate about continuous learning and innovation, and I am
-            committed to delivering high-quality software solutions.</p>
+        <p>My internships have equipped me
+            with a solid foundation in
+            software development, and I am
+            eager
+            to bring my
+            skills to new and challenging
+            projects. I am passionate about
+            continuous learning and
+            innovation, and I am
+            committed to delivering
+            high-quality software solutions.
+        </p>
     </div>
     </div>
 
@@ -434,18 +575,19 @@
             <div class="mb-6">
                 <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full
                     Name</label>
-                <input type="text" name="name" id="name" placeholder="John Doe" required
+                <input type="text" name="name" id="name" placeholder="Your Name" required
                     class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
             </div>
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email
                     Address</label>
-                <input type="email" name="email" id="email" placeholder="you@company.com" required
+                <input type="email" name="email" id="email" placeholder="Your Mail-Id" required
                     class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
             </div>
             <div class="mb-6">
-                <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
-                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
+                <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone
+                    Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Your Phone Number" required
                     class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
             </div>
             <div class="mb-6">
@@ -464,10 +606,10 @@
             <p class="text-base text-center text-gray-400" id="result"></p>
         </form>
     </div>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
+    </div>
 
     </div>
 
@@ -494,4 +636,5 @@
         });
     </script>
 </body>
+
 </html>
