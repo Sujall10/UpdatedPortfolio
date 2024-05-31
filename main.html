@@ -9,314 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-            font-family: 'Open Sans', sans-serif;
-            color: #dcdcdc;
-            line-height: 1.6;
-        }
-
-        .navbar {
-            margin-bottom: 30px;
-            background-color: #1f1f1f;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-brand {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #dcdcdc;
-        }
-
-        .nav-link {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #dcdcdc;
-        }
-
-        .nav-link:hover {
-            color: #9a67ea;
-        }
-
-        .section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 60px 0;
-            background-color: rgba(182, 147, 203, 0.785);
-            margin-bottom: 30px;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .left,
-        .right {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .left h1 {
-            margin-bottom: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 3.5rem;
-            color: white;
-        }
-
-        .left h1 span {
-            color: black;
-        }
-
-        .left p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-
-        .btn-primary {
-            background-color: #9a67ea;
-            border: none;
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #9a67ea;
-        }
-
-        .right img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        #portfolio {
-            padding: 50px 0;
-            background: black;
-        }
-
-        #portfolio h1 {
-            margin-bottom: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 4.5rem;
-            color: #bb86fc;
-        }
-
-        #portfolio span {
-            margin-bottom: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            /* font-size: 4.5rem; */
-            color: white;
-        }
-
-        .card {
-
-            border: none;
-            border-radius: 10px;
-            background: #1f1f1f;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            height: 200px;
-            object-fit: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            color: #bb86fc;
-        }
-
-        .card-text {
-            font-size: 1rem;
-            color: #dcdcdc;
-        }
-
-        #about {
-            border-radius: 5px;
-            padding: 50px 0;
-            background-color: rgba(182, 147, 203, 0.785);
-        }
-
-        #about h1 {
-            margin-bottom: 30px;
-            padding-left: 80px;
-            color: rgb(17, 2, 36);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 4rem;
-        }
-
-        #about p {
-            font-size: 1.1rem;
-            color: #000000;
-            text-align: left;
-            padding-left: 10px;
-        }
-
-        #about a {
-            color: white;
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-
-        #contact {
-            padding: 50px 0;
-            background: black;
-        }
-
-        #contact h1 {
-            margin-bottom: 30px;
-            color: white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 4.5rem;
-            text-align: left;
-        }
-
-        #contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: black;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        #contact label {
-            color: #dcdcdc;
-        }
-
-        #contact input,
-        #contact textarea {
-            border-radius: 5px;
-            border: 1px solid #333;
-            padding: 10px;
-            width: 100%;
-            font-size: 1rem;
-            margin-bottom: 20px;
-            background: #1f1f1f;
-            color: #dcdcdc;
-            transition: border-color 0.3s ease;
-        }
-
-        #contact input:focus,
-        #contact textarea:focus {
-            border-color: #bb86fc;
-            outline: none;
-        }
-
-        #contact button {
-            width: 100%;
-            padding: 10px;
-            font-size: 1.2rem;
-            background-color: #bb86fc;
-            border: none;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        #contact button:hover {
-            background-color: #9a67ea;
-        }
-
-        .social-icons {
-            padding: 50px 0;
-            background: #1f1f1f;
-            text-align: center;
-        }
-
-        .social-icons h2 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-            color: #bb86fc;
-        }
-
-        .social-icons a {
-            font-size: 2rem;
-            margin: 0 15px;
-            color: #dcdcdc;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #bb86fc;
-        }
-
-        footer {
-            padding: 20px 0;
-            text-align: center;
-            background: #1f1f1f;
-            color: #dcdcdc;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .scroll-up {
-            display: block;
-            margin: 20px auto 0;
-            font-size: 2rem;
-            color: #bb86fc;
-            cursor: pointer;
-        }
-
-        .scroll-up:hover {
-            color: #9a67ea;
-        }
-        
-
-        @media (max-width: 768px) {
-            .section .left {
-                width: 80vw;
-                /* flex-direction: column; */
-            }
-
-            .section .right {
-                display: none;
-            }
-
-            .left,
-            .right {
-                flex: unset;
-                width: 100%;
-                padding: 20px 0;
-            }
-
-            .left h1,
-            #portfolio h1,
-            #about h1,
-            #contact h1 {
-                font-size: 2.5rem;
-                text-align: center;
-            }
-
-            .left p,
-            #about p {
-                text-align: center;
-                font-size: 1rem;
-            }
-
-            #about h1 {
-                padding-left: 0;
-                text-align: center;
-            }
-
-            #about p {
-                padding: 0 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -339,6 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -356,14 +50,15 @@
                 <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
             </div>
             <div class="right" data-aos="fade-right">
-                <img src="WhatsApp Image 2024-05-30 at 12.55.37 PM.jpeg" alt="Profile Picture">
+                <img src="[removal.ai]_a23e4415-63d6-46e4-91ea-a8a8fb87dda4-785a1b9c359640da6bc9cfe3670b42ba.png"
+                    alt="Profile Picture">
             </div>
         </div>
     </div>
 
     <div id="portfolio" class="container" data-aos="fade-up">
-        <h1>Portf<span>olio</span></h1>
-    
+        <h1 data-aos="fade-down">Portf<span>olio</span></h1>
+
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -373,18 +68,19 @@
                                 <div class="leftt w-50 p-2">
                                     <div class="card">
                                         <img src="302968254-02e2b6d2-f58e-48d8-bed8-057267faaadb.png"
-                                             class="card-img-top" alt="Project 1">
+                                            class="card-img-top" alt="Project 1">
                                         <div class="card-body">
-                                            
-                                            <p class="card-text">This money tracking web app, built with HTML, CSS, and
-                                                JavaScript, provides users with a straightforward and interactive platform for
+
+                                            <p class="card-text"> Its main purpose is to provide users with a
+                                                straightforward and interactive platform for
                                                 managing their finances.</p>
                                         </div>
                                     </div>
                                 </div>
-                                    <div class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
-                                        <h1>Money Tracking WebApp</h1>
-                                    </div> 
+                                <div
+                                    class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                    <h1>Money Tracking WebApp</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -397,17 +93,19 @@
                                 <div class="leftt w-50 p-2">
                                     <div class="card">
                                         <img src="302968116-c4ecb2a6-4ef9-452a-a255-88823af1ed2e.png"
-                                             class="card-img-top" alt="Project 2">
+                                            class="card-img-top" alt="Project 2">
                                         <div class="card-body">
-                                            
-                                            <p class="card-text">Its main purpose is to generate random passwords based on user-defined
+
+                                            <p class="card-text">Its main purpose is to generate random passwords based
+                                                on user-defined
                                                 criteria such as length.</p>
                                         </div>
                                     </div>
                                 </div>
-                                    <div class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
-                                        <h1>Random Password Generator</h1>
-                                    </div>
+                                <div
+                                    class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                    <h1>Random Password Generator</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -419,17 +117,43 @@
                                 <div class="leftt w-50 p-2">
                                     <div class="card">
                                         <img src="302964062-c86603d5-b610-4fb4-9506-1aeb99b1dda9.png"
-                                             class="card-img-top" alt="Project 3">
+                                            class="card-img-top" alt="Project 3">
                                         <div class="card-body">
-                                           
-                                            <p class="card-text">The project aims to provide a user-friendly and secure solution
+
+                                            <p class="card-text">The project aims to provide a user-friendly and secure
+                                                solution
                                                 for efficient inventory management.</p>
                                         </div>
                                     </div>
                                 </div>
-                                    <div class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
-                                        <h1>Inventory Management System</h1>
+                                <div
+                                    class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                    <h1>Inventory Management System</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mb-4">
+                            <div class="block d-flex">
+                                <div class="leftt w-50 p-2">
+                                    <div class="card">
+                                        <img src="101982867-15518f80-3ca1-11eb-816f-cda1557ac646.png    "
+                                            class="card-img-top" alt="Project 3">
+                                        <div class="card-body">
+
+                                            <p class="card-text">The project aims to provide a user-friendly and secure
+                                                solution
+                                                for efficient inventory management.</p>
+                                        </div>
                                     </div>
+                                </div>
+                                <div
+                                    class="rightt w-50 p-2 d-flex align-items-center justify-content-center text-white">
+                                    <h1>Body Mass Index</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -446,10 +170,10 @@
             </a>
         </div>
     </div>
-    
+
 
     <div id="about" class="container" data-aos="fade-right">
-        <h1>About Me</h1>
+        <h1 data-aos="fade-left">Abo<span>ut</span></h1>
         <p> I'm eager to carve out a career
             path where I can leverage my
             academic
@@ -563,11 +287,13 @@
             committed to delivering
             high-quality software solutions.
         </p>
+        <p><a href="https://drive.google.com/file/d/1Re2_AtKL-80OEG2fFeIO91QE6I_Abv3C/view?usp=sharing" class="btn btn-primary" style="text-decoration: none;">View Resume</a></p>
+        <p>If you have any questions or would like to work with me, feel free to <a href="#contact">contact me</a>.</p>
     </div>
     </div>
 
     <div id="contact" class="container" data-aos="fade-up">
-        <h1>Contact Me</h1>
+        <h1>Contact <span>Me</span></h1>
         <form action="https://api.web3forms.com/submit" method="POST" id="form">
             <input type="hidden" name="access_key" value="05e06419-94d7-46c2-934f-398462e837ba" />
             <input type="hidden" name="subject" value="New Submission from Web3Forms" />
@@ -614,7 +340,7 @@
     </div>
 
     <div class="social-icons">
-        <h2>Follow Me</h2>
+        <h2 data-aos="fade-down">Follow Me</h2>
         <a href="https://github.com/Sujall10"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/sujal-rajput/"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.instagram.com/sujallrajput"><i class="fab fa-instagram"></i></a>
@@ -629,12 +355,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000, // Duration of the animation in milliseconds
-            once: true // Whether animation should happen only once - while scrolling down
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
